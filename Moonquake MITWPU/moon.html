@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="./src/styles.css" rel="stylesheet"></link>
+    <script src="//unpkg.com/d3-array"></script>
+    <script src="//unpkg.com/d3-scale"></script>
+    <script src="./globe.gl.min.js"></script>
+  </head>
+  <body>
+    <div id="globeViz"></div>
+      <h1 class="moon-title"><i>3D Moonquake Map</i></h1>
+      <p class="moon-text"><br>Hover over the various spots on the moon<br> to view more about the moonquakes.<br>You may also drag the mouse to rotate <br>the moon around!
+         <br> 
+
+      </p>
+      <p class="moon-text">
+      </p>
+      <div class="details">
+        <div class="row">
+          <div class="square yellow"></div>
+          <h2>Moderate Quake</h2>
+        </div>
+        <div class="row">
+          <div class="square white"></div>
+          <h2>Severe Quake</h2>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+canvas {
+  display: block;
+  height: 100vh;
+}
+.explore-button {
+  position: absolute;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.678);
+  color: rgb(255, 255, 255);
+  bottom: 20%;
+  right: 20%;
+  border-radius: 4px;
+  font-weight: 900;
+  transition: all ease 0.1s;
+  border: 0;
+  font-size: 1.2rem;
+  z-index: 10000000;
+}
+.explore-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px black;
+}
+.references-button:hover {
+  background-color: rgb(20, 1, 1);
+  color: rgb(234, 223, 223);
+  box-shadow: 0 10px 30px black;
+}
+
+#section-1 {
+  background-image: "./texture/galaxy.png";
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  padding: 30px;
+}
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+* {
+  font-family: Poppins, Sans-Serif;
+  overflow-x: hidden;
+}
+.shallow {
+  background-color: rgba(255, 255, 255, 0.558);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.399);
+  color: black;
+  border-left: 3px solid rgb(255, 234, 0);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.deep {
+  background-color: rgba(255, 255, 255, 0.568);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.399);
+  color: black;
+  border-left: 3px solid red;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.399);
+  color: rgb(208, 208, 208);
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  font-size: 4rem;
+}
+.details {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding: 20px;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  color: white;
+  z-index: 100;
+  padding: 0 80px;
+  border-radius: 4px;
+  box-shadow: 0 18px 18px black;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.square {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.yellow {
+  background-color: yellow;
+}
+.white {
+  background-color: rgb(255, 0, 0);
+}
+.moon-title {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  position: absolute;
+  left: 2%;
+  top: 10%;
+}
+.model-title {
+  color: rgb(65, 109, 230);
+  font-size: 4rem;
+}
+.model-content {
+  position: absolute;
+  top: 7%;
+  left: 6%;
+  width: 50%;
+}
+.overlay {
+  color: rgb(248, 147, 110);
+  
+}
+.model-text {
+  font-size: 200%;
+  font-weight: 300;
+  color: rgb(232, 221, 221);
+}
+.bold {
+  font-weight: 900;
+}
+.moon-text {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 2%;
+  top: 20%; 
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.references-button {
+  position: absolute;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.678);
+  color: rgb(204, 59, 59);
+  bottom: 20%;
+  right: 40%;
+  border-radius: 4px;
+  font-weight: 900;
+  transition: all ease 0.5s;
+  border: 0;
+  font-size: 1.2rem;
+  z-index: 10000000;
+}
+
+#references-section-1 img {
+  width: 33.3%;
+}
+#references-section-1 {
+  padding: 40px;
+  color: rgb(237, 69, 69);
+}
+.imgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+img {
+  margin-right: 10px;
+}
+#references-section-2 {
+  padding: 40px;
+}
+#references-section-2 h1 {
+  color: white;
+}
+#references-section-2 a {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .explore-button,
+  .references-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .explore-button {
+    right: 10%;
+  }
+  .explore-button1 {
+    position: absolute;
+  padding: 25px 20px;
+  background-color: rgba(140, 133, 133, 0.678);
+  color: rgb(210, 37, 37);
+  bottom: 20%;
+  border-radius: 4px;
+  font-weight: 900;
+  transition: all ease 0.1s;
+  border: 0;
+  font-size: 1.2rem;
+  z-index: 10000000;
+}
+.explore-button1:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px black;
+}
+.info-text {
+  color: rgb(230, 222, 222);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+
+  
+}
+}
+
